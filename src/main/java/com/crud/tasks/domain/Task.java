@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 public class Task {
     @Id
     @GeneratedValue
+    @Column(name = "ID", unique=true)
     private Long id;
 
     @Column(name = "name")
